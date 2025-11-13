@@ -1,0 +1,25 @@
+{
+  "network_name": "AiVerse Bots Network",
+  "version": "1.0.0",
+  "bots": [
+    { "name": "AiVerse Bot", "platforms": ["Telegram", "Discord", "Web"], "url": "https://t.me/aiverse_hub_bot" },
+    { "name": "Code Reasoning Bot", "platforms": ["Telegram"], "url": "https://t.me/CodeReasonBot" },
+    { "name": "NanoBanana Bot", "platforms": ["Telegram"], "url": "https://t.me/BananNanoBot" },
+    { "name": "Seedream Bot", "platforms": ["Telegram"], "url": "https://t.me/seedreameditbot" },
+    { "name": "Sora Video & GPT‑4 Chat", "platforms": ["Telegram"], "url": "https://t.me/Sora_pro_bot" },
+    { "name": "TryOn AI", "platforms": ["Telegram"], "url": "https://t.me/TryOnAI_bot" },
+    { "name": "Wan 2.5 bot", "platforms": ["Telegram"], "url": "https://t.me/wan3bot" }
+  ],
+  "shared_services": [
+    { "name": "Хостинг", "role": "развёртывание статических страниц" },
+    { "name": "Обработка запросов", "role": "LLM/инфраструктура обработки сообщений" },
+    { "name": "Логирование", "role": "диагностика и безопасность" },
+    { "name": "Аналитика", "role": "агрегированная статистика использования" }
+  ],
+  "data_flows": [
+    { "from": "user", "to": "bot", "purpose": "обработка сообщения" },
+    { "from": "bot", "to": "shared_services", "purpose": "доставка, логирование, аналитика" }
+  ],
+  "inter_bot_sharing_policy": "данные между ботами не передаются, если это не требуется для предоставления конкретной функции и не основано на соответствующем правовом основании",
+  "security": ["минимизация данных", "контроль доступа", "шифрование на транспорте", "мониторинг"]
+}

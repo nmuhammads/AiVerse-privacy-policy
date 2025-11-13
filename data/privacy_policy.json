@@ -1,0 +1,55 @@
+{
+  "policy_title": "Политика конфиденциальности AiVerse Bots",
+  "version": "1.0.0",
+  "last_updated": "2025-11-14",
+  "operator": {
+    "name": "Ваше имя или организация",
+    "email": "privacy@example.com",
+    "address": "Укажите юридический адрес",
+    "url": "https://example.com/privacy"
+  },
+  "scope": {
+    "services": ["AiVerse Bot", "AiVerse Bots Network"],
+    "platforms": ["Telegram", "Discord", "Web"],
+    "site": "GitHub Pages privacy page"
+  },
+  "legal_basis": [
+    { "basis": "исполнение договора", "activities": ["обработка сообщений", "ответы бота"] },
+    { "basis": "согласие", "activities": ["аналитика", "персонализация"] },
+    { "basis": "законные интересы", "activities": ["безопасность", "защита от злоупотреблений"] },
+    { "basis": "правовые обязательства", "activities": ["реагирование на законные запросы"] }
+  ],
+  "data_categories": [
+    { "name": "идентификаторы", "examples": ["user_id", "username", "profile_id"], "retention_days": 365 },
+    { "name": "контент сообщений", "examples": ["текст", "команды", "вложения"], "retention_days": 30 },
+    { "name": "технические данные", "examples": ["IP", "таймстемпы", "тип клиента"], "retention_days": 90 },
+    { "name": "настройки", "examples": ["язык", "предпочтения"], "retention_days": 365 },
+    { "name": "аналитика", "examples": ["агрегированная статистика"], "retention_days": 365 }
+  ],
+  "recipients": [
+    { "name": "GitHub Pages", "role": "хостинг статической страницы", "region": "глобально" },
+    { "name": "Провайдер обработки запросов", "role": "LLM/обработка сообщений", "region": "глобально" },
+    { "name": "Поставщик логирования", "role": "диагностика и безопасность", "region": "глобально" }
+  ],
+  "security_measures": [
+    "минимизация данных",
+    "контроль доступа",
+    "шифрование на транспорте",
+    "мониторинг событий безопасности"
+  ],
+  "user_rights": [
+    "доступ",
+    "исправление",
+    "удаление",
+    "ограничение",
+    "переносимость",
+    "возражение",
+    "отзыв согласия",
+    "жалоба в надзорный орган"
+  ],
+  "children_policy": "сервис не предназначен для лиц младше 13/16 лет",
+  "changes_policy": "обновления публикуются на этой странице",
+  "contact": {
+    "email": "privacy@example.com"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "AiVerse Bot",
+  "version": "1.0.0",
+  "platforms": ["Telegram", "Discord", "Web"],
+  "owner": {
+    "name": "Ваше имя или организация",
+    "contact_email": "privacy@example.com",
+    "contact_url": "https://example.com/contact"
+  },
+  "dpo": {
+    "name": "Ответственный за приватность",
+    "email": "privacy@example.com"
+  },
+  "data_categories": [
+    { "name": "идентификаторы", "examples": ["user_id", "username", "profile_id"] },
+    { "name": "контент сообщений", "examples": ["текстовые запросы", "команды", "вложения"] },
+    { "name": "технические данные", "examples": ["IP", "таймстемпы", "тип клиента"] },
+    { "name": "настройки", "examples": ["язык", "предпочтения"] },
+    { "name": "аналитика", "examples": ["агрегированная статистика использования"] }
+  ],
+  "purposes": [
+    "предоставление функциональности бота",
+    "обеспечение безопасности",
+    "аналитика и улучшение качества",
+    "соблюдение правовых обязательств"
+  ],
+  "legal_basis": [
+    "исполнение договора",
+    "согласие",
+    "законные интересы",
+    "правовые обязательства"
+  ],
+  "retention": {
+    "identifiers_days": 365,
+    "message_content_days": 30,
+    "analytics_days": 365
+  }
+}
