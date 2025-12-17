@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правила вывода средств | AiVerse</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: var(--tg-theme-bg-color, #ffffff);
+            color: var(--tg-theme-text-color, #000000);
+        }
+
+        .card {
+            background-color: var(--tg-theme-secondary-bg-color, #f5f5f5);
+        }
+
+        .accent {
+            color: var(--tg-theme-link-color, #2481cc);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--tg-theme-hint-color, #cccccc);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body class="p-4 pb-20">
+    <div class="max-w-lg mx-auto">
+
+        <!-- Header -->
+        <div class="text-center mb-6">
+            <div class="text-4xl mb-2">💸</div>
+            <h1 class="text-2xl font-bold">Правила вывода средств</h1>
+            <p class="text-sm opacity-70 mt-1">Партнёрская программа AiVerse</p>
+        </div>
+
+        <!-- Main Info Cards -->
+        <div class="space-y-4 mb-8">
+
+            <!-- Periods -->
+            <div class="card rounded-xl p-4">
+                <h2 class="font-bold text-lg mb-3 flex items-center gap-2">
+                    📅 Расчетные периоды
+                </h2>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
+                        <span>Первый период</span>
+                        <span class="font-medium">1 — 15 число</span>
+                    </div>
+                    <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
+                        <span>Второй период</span>
+                        <span class="font-medium">16 — 31 число</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Availability -->
+            <div class="card rounded-xl p-4">
+                <h2 class="font-bold text-lg mb-3 flex items-center gap-2">
+                    💰 Когда средства доступны
+                </h2>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
+                        <span>После 15-го числа</span>
+                        <span class="font-medium">За 1-15 число</span>
+                    </div>
+                    <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
+                        <span>После 31-го числа</span>
+                        <span class="font-medium">За 16-31 число</span>
+                    </div>
+                </div>
+                <p class="text-xs opacity-60 mt-3">
+                    Средства за текущий период переходят в «Доступно для вывода» после окончания периода.
+                </p>
+            </div>
+
+            <!-- Payout Dates -->
+            <div class="card rounded-xl p-4">
+                <h2 class="font-bold text-lg mb-3 flex items-center gap-2">
+                    🗓 Даты выплат
+                </h2>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
+                        <span>За первый период</span>
+                        <span class="font-medium accent">27-28 числа</span>
+                    </div>
+                    <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
+                        <span>За второй период</span>
+                        <span class="font-medium accent">12-13 числа</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Withdraw -->
+            <div class="card rounded-xl p-4 border-2 border-blue-200">
+                <h2 class="font-bold text-lg mb-3 flex items-center gap-2">
+                    📩 Как вывести средства
+                </h2>
+                <p class="text-sm">
+                    Для вывода средств свяжитесь с <span class="font-bold">администратором бота</span>.
+                </p>
+                <p class="text-xs opacity-60 mt-2">
+                    Администратор поможет оформить выплату и ответит на вопросы.
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="mb-8">
+            <h2 class="font-bold text-xl mb-4">❓ Часто задаваемые вопросы</h2>
+
+            <div class="card rounded-xl overflow-hidden">
+                <details class="faq-item">
+                    <summary class="p-4 cursor-pointer font-medium">
+                        Почему мой баланс разделен на два?
+                    </summary>
+                    <div class="px-4 pb-4 text-sm opacity-80">
+                        Баланс разделен на «Накоплено за период» и «Доступно для вывода». 
+                        Средства, заработанные в текущем периоде (1-15 или 16-31 число), 
+                        становятся доступными для вывода только после окончания этого периода.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="p-4 cursor-pointer font-medium">
+                        Когда мои средства станут доступны?
+                    </summary>
+                    <div class="px-4 pb-4 text-sm opacity-80">
+                        Средства за первый период (1-15 число) станут доступны после 15-го числа, 
+                        а за второй период (16-31 число) — после 31-го числа.
+                        Затем они отобразятся в разделе «Доступно для вывода».
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="p-4 cursor-pointer font-medium">
+                        Какие способы вывода доступны?
+                    </summary>
+                    <div class="px-4 pb-4 text-sm opacity-80">
+                        Доступные способы вывода зависят от региона и валюты. 
+                        Обратитесь к администратору для уточнения актуальных методов.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="p-4 cursor-pointer font-medium">
+                        Сколько времени занимает вывод?
+                    </summary>
+                    <div class="px-4 pb-4 text-sm opacity-80">
+                        Обработка заявки занимает от 2 до 5 рабочих дней. 
+                        Срок зачисления средств зависит от выбранного способа вывода.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="p-4 cursor-pointer font-medium">
+                        Что делать, если возникли проблемы?
+                    </summary>
+                    <div class="px-4 pb-4 text-sm opacity-80">
+                        При любых вопросах или проблемах свяжитесь с администратором бота. 
+                        Мы поможем решить любую ситуацию.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="p-4 cursor-pointer font-medium">
+                        Как увеличить партнёрский процент?
+                    </summary>
+                    <div class="px-4 pb-4 text-sm opacity-80">
+                        Стандартный процент — 10%. Для увеличения партнёрского процента 
+                        обратитесь к администратору. Условия обсуждаются индивидуально.
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="text-center text-sm opacity-60">
+            <p>По всем вопросам обращайтесь к администратору</p>
+            <p class="mt-1">© AiVerse</p>
+        </div>
+    </div>
+
+    <script>
+        const tg = window.Telegram.WebApp;
+        tg.expand();
+        tg.ready();
+    </script>
+</body>
+
+</html>
