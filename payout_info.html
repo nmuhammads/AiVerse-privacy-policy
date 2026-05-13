@@ -44,40 +44,43 @@
         <!-- Main Info Cards -->
         <div class="space-y-4 mb-8">
 
-            <!-- Periods -->
+            <!-- Minimum Balance -->
             <div class="card rounded-xl p-4">
                 <h2 class="font-bold text-lg mb-3 flex items-center gap-2">
-                    📅 Расчетные периоды
+                    💰 Доступно для вывода
                 </h2>
                 <div class="space-y-2 text-sm">
                     <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
-                        <span>Первый период</span>
-                        <span class="font-medium">1 — 15 число</span>
+                        <span>Сейчас доступно</span>
+                        <span class="font-medium">Нет доступных сумм</span>
                     </div>
                     <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
-                        <span>Второй период</span>
-                        <span class="font-medium">16 — 31 число</span>
+                        <span>Порог вывода</span>
+                        <span class="font-medium accent">1000</span>
                     </div>
                 </div>
+                <p class="text-xs opacity-60 mt-3">
+                    Средства становятся доступными для вывода только после достижения 1000 в основном балансе накоплений.
+                </p>
             </div>
 
             <!-- Availability -->
             <div class="card rounded-xl p-4">
                 <h2 class="font-bold text-lg mb-3 flex items-center gap-2">
-                    💰 Когда средства доступны
+                    📌 Когда средства станут доступны
                 </h2>
                 <div class="space-y-2 text-sm">
                     <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
-                        <span>После 15-го числа</span>
-                        <span class="font-medium">За 1-15 число</span>
+                        <span>Основной баланс меньше 1000</span>
+                        <span class="font-medium">Недоступно</span>
                     </div>
                     <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
-                        <span>После 31-го числа</span>
-                        <span class="font-medium">За 16-31 число</span>
+                        <span>Основной баланс от 1000</span>
+                        <span class="font-medium">Доступно</span>
                     </div>
                 </div>
                 <p class="text-xs opacity-60 mt-3">
-                    Средства за текущий период переходят в «Доступно для вывода» после окончания периода.
+                    До достижения порога 1000 в разделе «Доступно для вывода» суммы не отображаются.
                 </p>
             </div>
 
@@ -88,14 +91,17 @@
                 </h2>
                 <div class="space-y-2 text-sm">
                     <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
-                        <span>За первый период</span>
-                        <span class="font-medium accent">27-28 числа</span>
+                        <span>Первое окно выплат</span>
+                        <span class="font-medium accent">11-12 числа</span>
                     </div>
                     <div class="flex justify-between items-center p-2 bg-white/50 rounded-lg">
-                        <span>За второй период</span>
-                        <span class="font-medium accent">12-13 числа</span>
+                        <span>Второе окно выплат</span>
+                        <span class="font-medium accent">26-27 числа</span>
                     </div>
                 </div>
+                <p class="text-xs opacity-60 mt-3">
+                    Вывод проводится два раза в месяц для пользователей, у которых доступные средства уже открыты.
+                </p>
             </div>
 
             <!-- How to Withdraw -->
@@ -123,9 +129,8 @@
                         Почему мой баланс разделен на два?
                     </summary>
                     <div class="px-4 pb-4 text-sm opacity-80">
-                        Баланс разделен на «Накоплено за период» и «Доступно для вывода».
-                        Средства, заработанные в текущем периоде (1-15 или 16-31 число),
-                        становятся доступными для вывода только после окончания этого периода.
+                        Баланс разделен на основной баланс накоплений и «Доступно для вывода».
+                        Пока в основном балансе накоплений меньше 1000, доступных для вывода сумм нет.
                     </div>
                 </details>
 
@@ -134,9 +139,8 @@
                         Когда мои средства станут доступны?
                     </summary>
                     <div class="px-4 pb-4 text-sm opacity-80">
-                        Средства за первый период (1-15 число) станут доступны после 15-го числа,
-                        а за второй период (16-31 число) — после 31-го числа.
-                        Затем они отобразятся в разделе «Доступно для вывода».
+                        Средства станут доступны после того, как основной баланс накоплений достигнет 1000.
+                        После достижения порога средства отобразятся в разделе «Доступно для вывода».
                     </div>
                 </details>
 
